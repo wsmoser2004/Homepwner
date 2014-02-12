@@ -53,4 +53,64 @@
     return cell;
 }
 
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    return [self headerView];
+}
+
+- (CGFloat) tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return [[self headerView] bounds].size.height;
+}
+
+- (UIView *)headerView
+{
+    if (!headerView)
+    {
+        [[NSBundle mainBundle] loadNibNamed:@"HeaderView" owner:self options:nil];
+    }
+    return headerView;
+}
+
+- (IBAction)toggleEditMode:(id)sender
+{
+    if ([self isEditing])
+    {
+        [sender setTitle:@"Edit" forState:UIControlStateNormal];
+        [self setEditing:NO];
+    }
+    else
+    {
+        [sender setTitle:@"Done" forState:UIControlStateNormal];
+        [self setEditing:YES];
+    }
+}
+
+- (IBAction)addNewItem:(id)sender
+{
+    BNRItem *newItem = [[BNRItemStore sharedStore] createItem];
+    int lastRow = [[[BNRItemStore sharedStore] allItems] indexOfObject:newItem];
+    NSIndexPath *ip = [NSIndexPath indexPathForRow:lastRow inSection:0];
+    [[self tableView] insertRowsAtIndexPaths:[NSArray arrayWithObject:ip] withRowAnimation:UITableViewRowAnimationTop];
+}
+
+- (void)tableView:(UITableView *)tv commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
+                                     forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete)
+    {
+        BNRItemStore *store = [BNRItemStore sharedStore];
+        NSArray *items = [store allItems];
+        BNRItem *p = [items objectAtIndex:[indexPath row]];
+        [store removeItem:p];
+        [tv deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    }
+}
+
+- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath
+{
+    [[BNRItemStore sharedStore] moveItemAtIndex:[sourceIndexPath row]
+                                        toIndex:[destinationIndexPath row]];
+}
+
 @end
