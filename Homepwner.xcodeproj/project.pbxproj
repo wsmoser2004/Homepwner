@@ -19,6 +19,9 @@
 		EF5757C118ABFBA8000A854C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5757A918ABFBA8000A854C /* UIKit.framework */; };
 		EF5757C918ABFBA8000A854C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF5757C718ABFBA8000A854C /* InfoPlist.strings */; };
 		EF5757CB18ABFBA8000A854C /* HomepwnerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5757CA18ABFBA8000A854C /* HomepwnerTests.m */; };
+		EF5757D618ABFBD1000A854C /* ItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5757D518ABFBD1000A854C /* ItemsViewController.m */; };
+		EF5757D918ABFC9D000A854C /* BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5757D818ABFC9D000A854C /* BNRItem.m */; };
+		EF5757DC18ABFCC8000A854C /* BNRItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5757DB18ABFCC8000A854C /* BNRItemStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,12 @@
 		EF5757C618ABFBA8000A854C /* HomepwnerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HomepwnerTests-Info.plist"; sourceTree = "<group>"; };
 		EF5757C818ABFBA8000A854C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EF5757CA18ABFBA8000A854C /* HomepwnerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomepwnerTests.m; sourceTree = "<group>"; };
+		EF5757D418ABFBD1000A854C /* ItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItemsViewController.h; path = Homepwner/ItemsViewController.h; sourceTree = "<group>"; };
+		EF5757D518ABFBD1000A854C /* ItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemsViewController.m; path = Homepwner/ItemsViewController.m; sourceTree = "<group>"; };
+		EF5757D718ABFC9D000A854C /* BNRItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRItem.h; sourceTree = "<group>"; };
+		EF5757D818ABFC9D000A854C /* BNRItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItem.m; sourceTree = "<group>"; };
+		EF5757DA18ABFCC7000A854C /* BNRItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRItemStore.h; sourceTree = "<group>"; };
+		EF5757DB18ABFCC8000A854C /* BNRItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItemStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +86,10 @@
 		EF57579918ABFBA8000A854C = {
 			isa = PBXGroup;
 			children = (
+				EF5757D718ABFC9D000A854C /* BNRItem.h */,
+				EF5757D818ABFC9D000A854C /* BNRItem.m */,
+				EF5757D418ABFBD1000A854C /* ItemsViewController.h */,
+				EF5757D518ABFBD1000A854C /* ItemsViewController.m */,
 				EF5757AB18ABFBA8000A854C /* Homepwner */,
 				EF5757C418ABFBA8000A854C /* HomepwnerTests */,
 				EF5757A418ABFBA8000A854C /* Frameworks */,
@@ -109,6 +122,8 @@
 			children = (
 				EF5757B418ABFBA8000A854C /* HomepwnerAppDelegate.h */,
 				EF5757B518ABFBA8000A854C /* HomepwnerAppDelegate.m */,
+				EF5757DA18ABFCC7000A854C /* BNRItemStore.h */,
+				EF5757DB18ABFCC8000A854C /* BNRItemStore.m */,
 				EF5757B718ABFBA8000A854C /* Images.xcassets */,
 				EF5757AC18ABFBA8000A854C /* Supporting Files */,
 			);
@@ -240,6 +255,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF5757DC18ABFCC8000A854C /* BNRItemStore.m in Sources */,
+				EF5757D618ABFBD1000A854C /* ItemsViewController.m in Sources */,
+				EF5757D918ABFC9D000A854C /* BNRItem.m in Sources */,
 				EF5757B618ABFBA8000A854C /* HomepwnerAppDelegate.m in Sources */,
 				EF5757B218ABFBA8000A854C /* main.m in Sources */,
 			);
