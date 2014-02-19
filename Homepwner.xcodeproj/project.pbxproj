@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF5537C118B29E08008CEBEE /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5537BF18B29E08008CEBEE /* DetailViewController.m */; };
+		EF5537C218B29E08008CEBEE /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF5537C018B29E08008CEBEE /* DetailViewController.xib */; };
 		EF5757A618ABFBA8000A854C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5757A518ABFBA8000A854C /* Foundation.framework */; };
 		EF5757A818ABFBA8000A854C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5757A718ABFBA8000A854C /* CoreGraphics.framework */; };
 		EF5757AA18ABFBA8000A854C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5757A918ABFBA8000A854C /* UIKit.framework */; };
@@ -23,6 +25,7 @@
 		EF5757D918ABFC9D000A854C /* BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5757D818ABFC9D000A854C /* BNRItem.m */; };
 		EF5757DC18ABFCC8000A854C /* BNRItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5757DB18ABFCC8000A854C /* BNRItemStore.m */; };
 		EF5757DE18AC06D7000A854C /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF5757DD18AC06D7000A854C /* HeaderView.xib */; };
+		EF6FFBC918B544160002FC68 /* BNRImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6FFBC818B544160002FC68 /* BNRImageStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF5537BE18B29E07008CEBEE /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = ../DetailViewController.h; sourceTree = "<group>"; };
+		EF5537BF18B29E08008CEBEE /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = ../DetailViewController.m; sourceTree = "<group>"; };
+		EF5537C018B29E08008CEBEE /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailViewController.xib; path = ../DetailViewController.xib; sourceTree = "<group>"; };
 		EF5757A218ABFBA8000A854C /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF5757A518ABFBA8000A854C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EF5757A718ABFBA8000A854C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -59,6 +65,8 @@
 		EF5757DA18ABFCC7000A854C /* BNRItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRItemStore.h; sourceTree = "<group>"; };
 		EF5757DB18ABFCC8000A854C /* BNRItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItemStore.m; sourceTree = "<group>"; };
 		EF5757DD18AC06D7000A854C /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HeaderView.xib; path = ../HeaderView.xib; sourceTree = "<group>"; };
+		EF6FFBC718B544160002FC68 /* BNRImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRImageStore.h; sourceTree = "<group>"; };
+		EF6FFBC818B544160002FC68 /* BNRImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRImageStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,11 +126,16 @@
 		EF5757AB18ABFBA8000A854C /* Homepwner */ = {
 			isa = PBXGroup;
 			children = (
+				EF5537BE18B29E07008CEBEE /* DetailViewController.h */,
+				EF5537BF18B29E08008CEBEE /* DetailViewController.m */,
+				EF6FFBC718B544160002FC68 /* BNRImageStore.h */,
+				EF6FFBC818B544160002FC68 /* BNRImageStore.m */,
+				EF5537C018B29E08008CEBEE /* DetailViewController.xib */,
 				EF5757D718ABFC9D000A854C /* BNRItem.h */,
 				EF5757D818ABFC9D000A854C /* BNRItem.m */,
 				EF5757D418ABFBD1000A854C /* ItemsViewController.h */,
-				EF5757DD18AC06D7000A854C /* HeaderView.xib */,
 				EF5757D518ABFBD1000A854C /* ItemsViewController.m */,
+				EF5757DD18AC06D7000A854C /* HeaderView.xib */,
 				EF5757B418ABFBA8000A854C /* HomepwnerAppDelegate.h */,
 				EF5757B518ABFBA8000A854C /* HomepwnerAppDelegate.m */,
 				EF5757DA18ABFCC7000A854C /* BNRItemStore.h */,
@@ -241,6 +254,7 @@
 				EF5757DE18AC06D7000A854C /* HeaderView.xib in Resources */,
 				EF5757B018ABFBA8000A854C /* InfoPlist.strings in Resources */,
 				EF5757B818ABFBA8000A854C /* Images.xcassets in Resources */,
+				EF5537C218B29E08008CEBEE /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,9 +275,11 @@
 			files = (
 				EF5757DC18ABFCC8000A854C /* BNRItemStore.m in Sources */,
 				EF5757D618ABFBD1000A854C /* ItemsViewController.m in Sources */,
+				EF6FFBC918B544160002FC68 /* BNRImageStore.m in Sources */,
 				EF5757D918ABFC9D000A854C /* BNRItem.m in Sources */,
 				EF5757B618ABFBA8000A854C /* HomepwnerAppDelegate.m in Sources */,
 				EF5757B218ABFBA8000A854C /* main.m in Sources */,
+				EF5537C118B29E08008CEBEE /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,6 +480,7 @@
 				EF5757D018ABFBA8000A854C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF5757D118ABFBA8000A854C /* Build configuration list for PBXNativeTarget "HomepwnerTests" */ = {
 			isa = XCConfigurationList;
@@ -472,6 +489,7 @@
 				EF5757D318ABFBA8000A854C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

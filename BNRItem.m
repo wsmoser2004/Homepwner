@@ -9,6 +9,7 @@
 #import "BNRItem.h"
 
 @implementation BNRItem
+@synthesize imageKey;
 
 - (id)initWithItemName:(NSString *)name serialNumber:(NSString *)sNumber
 {
@@ -42,7 +43,8 @@
 
 - (NSString *) description
 {
-    return [NSString stringWithFormat:@"%@ $%d %@", [self itemName], [self valueInDollars], [self serialNumber]];
+//    return [NSString stringWithFormat:@"%@ $%d %@", [self itemName], [self valueInDollars], [self serialNumber]];
+    return [NSString stringWithFormat:@"%@", [self itemName]];
 }
 
 - (NSString *) itemName
