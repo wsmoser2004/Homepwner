@@ -75,6 +75,11 @@
                                 <action selector="takePicture:" destination="-1" id="G9w-Se-T40"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem systemItem="trash" id="2Jx-cl-D81">
+                            <connections>
+                                <action selector="clearPicture:" destination="-1" id="mD2-Mv-GXt"/>
+                            </connections>
+                        </barButtonItem>
                     </items>
                 </toolbar>
             </subviews>

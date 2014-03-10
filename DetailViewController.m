@@ -100,6 +100,12 @@
     [self presentViewController:imagePicker animated:YES completion:nil];
 }
 
+- (IBAction)clearPicture:(id)sender
+{
+    [[BNRImageStore sharedStore]deleteImageForKey:item.imageKey];
+    [[self imageView] setImage:nil];
+}
+
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
     if (item.imageKey)
