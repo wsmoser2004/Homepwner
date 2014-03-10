@@ -126,20 +126,20 @@
 		EF5757AB18ABFBA8000A854C /* Homepwner */ = {
 			isa = PBXGroup;
 			children = (
-				EF5537BE18B29E07008CEBEE /* DetailViewController.h */,
-				EF5537BF18B29E08008CEBEE /* DetailViewController.m */,
 				EF6FFBC718B544160002FC68 /* BNRImageStore.h */,
 				EF6FFBC818B544160002FC68 /* BNRImageStore.m */,
-				EF5537C018B29E08008CEBEE /* DetailViewController.xib */,
 				EF5757D718ABFC9D000A854C /* BNRItem.h */,
 				EF5757D818ABFC9D000A854C /* BNRItem.m */,
-				EF5757D418ABFBD1000A854C /* ItemsViewController.h */,
-				EF5757D518ABFBD1000A854C /* ItemsViewController.m */,
+				EF5757DA18ABFCC7000A854C /* BNRItemStore.h */,
+				EF5757DB18ABFCC8000A854C /* BNRItemStore.m */,
+				EF5537BE18B29E07008CEBEE /* DetailViewController.h */,
+				EF5537BF18B29E08008CEBEE /* DetailViewController.m */,
+				EF5537C018B29E08008CEBEE /* DetailViewController.xib */,
 				EF5757DD18AC06D7000A854C /* HeaderView.xib */,
 				EF5757B418ABFBA8000A854C /* HomepwnerAppDelegate.h */,
 				EF5757B518ABFBA8000A854C /* HomepwnerAppDelegate.m */,
-				EF5757DA18ABFCC7000A854C /* BNRItemStore.h */,
-				EF5757DB18ABFCC8000A854C /* BNRItemStore.m */,
+				EF5757D418ABFBD1000A854C /* ItemsViewController.h */,
+				EF5757D518ABFBD1000A854C /* ItemsViewController.m */,
 				EF5757B718ABFBA8000A854C /* Images.xcassets */,
 				EF5757AC18ABFBA8000A854C /* Supporting Files */,
 			);

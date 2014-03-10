@@ -86,6 +86,7 @@
 - (IBAction)takePicture:(id)sender
 {
     UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+    imagePicker.allowsEditing = YES;
     if ([UIImagePickerController
             isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera])
     {
@@ -104,7 +105,8 @@
     if (item.imageKey)
         [[BNRImageStore sharedStore] deleteImageForKey:item.imageKey];
     
-    UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
+//    UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
+    UIImage *image = [info objectForKey:UIImagePickerControllerEditedImage];
     
     CFUUIDRef newUniqueID = CFUUIDCreate(kCFAllocatorDefault);
     CFStringRef newUniqueIDString = CFUUIDCreateString(kCFAllocatorDefault, newUniqueID);
