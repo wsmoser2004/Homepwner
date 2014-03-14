@@ -55,9 +55,6 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-//    UITableViewCell *cell =
-//    [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
-//                           reuseIdentifier:@"UITableViewCell"];
     UITableViewCell *cell =
         [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell"];
     
@@ -71,45 +68,22 @@
     return cell;
 }
 
-//- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
-//{
-//    return [self headerView];
-//}
-//
-//- (CGFloat) tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
-//{
-//    return [[self headerView] bounds].size.height;
-//}
-//
-//- (UIView *)headerView
-//{
-//    if (!headerView)
-//    {
-//        [[NSBundle mainBundle] loadNibNamed:@"HeaderView" owner:self options:nil];
-//    }
-//    return headerView;
-//}
-//
-//- (IBAction)toggleEditMode:(id)sender
-//{
-//    if ([self isEditing])
-//    {
-//        [sender setTitle:@"Edit" forState:UIControlStateNormal];
-//        [self setEditing:NO];
-//    }
-//    else
-//    {
-//        [sender setTitle:@"Done" forState:UIControlStateNormal];
-//        [self setEditing:YES];
-//    }
-//}
-
 - (IBAction)addNewItem:(id)sender
 {
     BNRItem *newItem = [[BNRItemStore sharedStore] createItem];
-    int lastRow = [[[BNRItemStore sharedStore] allItems] indexOfObject:newItem];
-    NSIndexPath *ip = [NSIndexPath indexPathForRow:lastRow inSection:0];
-    [[self tableView] insertRowsAtIndexPaths:[NSArray arrayWithObject:ip] withRowAnimation:UITableViewRowAnimationTop];
+    DetailViewController *detailViewController =
+        [[DetailViewController alloc] initForNewItem:YES];
+    [detailViewController setItem:newItem];
+    
+    [detailViewController setDismissBlock:^{
+        [[self tableView] reloadData];
+    }];
+    
+    UINavigationController *navController =
+        [[UINavigationController alloc] initWithRootViewController:detailViewController];
+    [navController setModalPresentationStyle:UIModalPresentationFormSheet];
+    [navController setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
+    [self presentViewController:navController animated:YES completion:nil];
 }
 
 - (void)tableView:(UITableView *)tv commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
@@ -133,7 +107,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    DetailViewController *detailViewController = [[DetailViewController alloc] init];
+    DetailViewController *detailViewController = [[DetailViewController alloc] initForNewItem:NO];
     
     NSArray *items = [[BNRItemStore sharedStore] allItems];
     BNRItem *selected = [items objectAtIndex:[indexPath row]];

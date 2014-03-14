@@ -26,6 +26,7 @@
 		EF5757DC18ABFCC8000A854C /* BNRItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5757DB18ABFCC8000A854C /* BNRItemStore.m */; };
 		EF5757DE18AC06D7000A854C /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF5757DD18AC06D7000A854C /* HeaderView.xib */; };
 		EF6FFBC918B544160002FC68 /* BNRImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6FFBC818B544160002FC68 /* BNRImageStore.m */; };
+		EFB3B90E18D0EAD100790AF3 /* DetailViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFB3B90D18D0EAD100790AF3 /* DetailViewController~ipad.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		EF5757DD18AC06D7000A854C /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HeaderView.xib; path = ../HeaderView.xib; sourceTree = "<group>"; };
 		EF6FFBC718B544160002FC68 /* BNRImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRImageStore.h; sourceTree = "<group>"; };
 		EF6FFBC818B544160002FC68 /* BNRImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRImageStore.m; sourceTree = "<group>"; };
+		EFB3B90D18D0EAD100790AF3 /* DetailViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "DetailViewController~ipad.xib"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				EF5537BE18B29E07008CEBEE /* DetailViewController.h */,
 				EF5537BF18B29E08008CEBEE /* DetailViewController.m */,
 				EF5537C018B29E08008CEBEE /* DetailViewController.xib */,
+				EFB3B90D18D0EAD100790AF3 /* DetailViewController~ipad.xib */,
 				EF5757DD18AC06D7000A854C /* HeaderView.xib */,
 				EF5757B418ABFBA8000A854C /* HomepwnerAppDelegate.h */,
 				EF5757B518ABFBA8000A854C /* HomepwnerAppDelegate.m */,
@@ -255,6 +258,7 @@
 				EF5757B018ABFBA8000A854C /* InfoPlist.strings in Resources */,
 				EF5757B818ABFBA8000A854C /* Images.xcassets in Resources */,
 				EF5537C218B29E08008CEBEE /* DetailViewController.xib in Resources */,
+				EFB3B90E18D0EAD100790AF3 /* DetailViewController~ipad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,7 +405,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Homepwner/Homepwner-Prefix.pch";
 				INFOPLIST_FILE = "Homepwner/Homepwner-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -414,7 +420,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Homepwner/Homepwner-Prefix.pch";
 				INFOPLIST_FILE = "Homepwner/Homepwner-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
