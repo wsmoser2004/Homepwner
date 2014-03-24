@@ -29,10 +29,10 @@
         [[self navigationItem] setLeftBarButtonItem:[self editButtonItem]];
         
          
-        for (int i = 0; i < 5; i++)
-        {
-            [[BNRItemStore sharedStore] createItem];
-        }
+//        for (int i = 0; i < 5; i++)
+//        {
+//            [[BNRItemStore sharedStore] createItem];
+//        }
     }
     return self;
 }
@@ -82,7 +82,7 @@
     UINavigationController *navController =
         [[UINavigationController alloc] initWithRootViewController:detailViewController];
     [navController setModalPresentationStyle:UIModalPresentationFormSheet];
-    [navController setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
+//    [navController setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
     [self presentViewController:navController animated:YES completion:nil];
 }
 

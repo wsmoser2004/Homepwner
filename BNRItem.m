@@ -43,7 +43,6 @@
 
 - (NSString *) description
 {
-//    return [NSString stringWithFormat:@"%@ $%d %@", [self itemName], [self valueInDollars], [self serialNumber]];
     return [NSString stringWithFormat:@"%@", [self itemName]];
 }
 
@@ -108,10 +107,31 @@
     BNRItem *newItem = [[self alloc] initWithItemName:randomName
                                        valueInDollars:randomValue
                                          serialNumber:randomSerialNumber];
-    //BNRItem *newItem = [[self alloc] initWithItemName:randomName
-    //                                     serialNumber:randomSerialNumber];
     
     return newItem;
+}
+
+- (void)encodeWithCoder:(NSCoder *)aCoder
+{
+    [aCoder encodeObject:itemName forKey:@"itemName"];
+    [aCoder encodeObject:serialNumber forKey:@"serialNumber"];
+    [aCoder encodeObject:dateCreated forKey:@"dateCreated"];
+    [aCoder encodeObject:imageKey forKey:@"imageKey"];
+    [aCoder encodeInt:valueInDollars forKey:@"valueInDollars"];
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super init];
+    if (self)
+    {
+        self.itemName = [aDecoder decodeObjectForKey:@"itemName"];
+        self.serialNumber = [aDecoder decodeObjectForKey:@"serialNumber"];
+        self.imageKey = [aDecoder decodeObjectForKey:@"imageKey"];
+        self.valueInDollars = [aDecoder decodeIntForKey:@"valueInDollars"];
+        self.dateCreated = [aDecoder decodeObjectForKey:@"dateCreated"];
+    }
+    return self;
 }
 
 @end
