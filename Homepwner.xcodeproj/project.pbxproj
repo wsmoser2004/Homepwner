@@ -27,6 +27,10 @@
 		EF5757DE18AC06D7000A854C /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF5757DD18AC06D7000A854C /* HeaderView.xib */; };
 		EF6FFBC918B544160002FC68 /* BNRImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6FFBC818B544160002FC68 /* BNRImageStore.m */; };
 		EFB3B90E18D0EAD100790AF3 /* DetailViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFB3B90D18D0EAD100790AF3 /* DetailViewController~ipad.xib */; };
+		EFCC60FC18E35C33004D22C6 /* HomepwnerItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCC60FB18E35C33004D22C6 /* HomepwnerItemCell.m */; };
+		EFCC60FE18E35C9C004D22C6 /* HomepwnerItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFCC60FD18E35C9C004D22C6 /* HomepwnerItemCell.xib */; };
+		EFF7958D18E5A9B400C22FB6 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF7958B18E5A9B400C22FB6 /* ImageViewController.m */; };
+		EFF7958E18E5A9B400C22FB6 /* ImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFF7958C18E5A9B400C22FB6 /* ImageViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +73,12 @@
 		EF6FFBC718B544160002FC68 /* BNRImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRImageStore.h; sourceTree = "<group>"; };
 		EF6FFBC818B544160002FC68 /* BNRImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRImageStore.m; sourceTree = "<group>"; };
 		EFB3B90D18D0EAD100790AF3 /* DetailViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "DetailViewController~ipad.xib"; sourceTree = SOURCE_ROOT; };
+		EFCC60FA18E35C33004D22C6 /* HomepwnerItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomepwnerItemCell.h; sourceTree = "<group>"; };
+		EFCC60FB18E35C33004D22C6 /* HomepwnerItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomepwnerItemCell.m; sourceTree = "<group>"; };
+		EFCC60FD18E35C9C004D22C6 /* HomepwnerItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomepwnerItemCell.xib; sourceTree = "<group>"; };
+		EFF7958A18E5A9B400C22FB6 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		EFF7958B18E5A9B400C22FB6 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		EFF7958C18E5A9B400C22FB6 /* ImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,9 +151,15 @@
 				EF5757DD18AC06D7000A854C /* HeaderView.xib */,
 				EF5757B418ABFBA8000A854C /* HomepwnerAppDelegate.h */,
 				EF5757B518ABFBA8000A854C /* HomepwnerAppDelegate.m */,
+				EFCC60FA18E35C33004D22C6 /* HomepwnerItemCell.h */,
+				EFCC60FB18E35C33004D22C6 /* HomepwnerItemCell.m */,
+				EFCC60FD18E35C9C004D22C6 /* HomepwnerItemCell.xib */,
+				EF5757B718ABFBA8000A854C /* Images.xcassets */,
+				EFF7958A18E5A9B400C22FB6 /* ImageViewController.h */,
+				EFF7958B18E5A9B400C22FB6 /* ImageViewController.m */,
+				EFF7958C18E5A9B400C22FB6 /* ImageViewController.xib */,
 				EF5757D418ABFBD1000A854C /* ItemsViewController.h */,
 				EF5757D518ABFBD1000A854C /* ItemsViewController.m */,
-				EF5757B718ABFBA8000A854C /* Images.xcassets */,
 				EF5757AC18ABFBA8000A854C /* Supporting Files */,
 			);
 			path = Homepwner;
@@ -223,7 +239,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = Homepwner;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Moser, Wesley";
 				TargetAttributes = {
 					EF5757BC18ABFBA8000A854C = {
@@ -258,6 +274,8 @@
 				EF5757B018ABFBA8000A854C /* InfoPlist.strings in Resources */,
 				EF5757B818ABFBA8000A854C /* Images.xcassets in Resources */,
 				EF5537C218B29E08008CEBEE /* DetailViewController.xib in Resources */,
+				EFF7958E18E5A9B400C22FB6 /* ImageViewController.xib in Resources */,
+				EFCC60FE18E35C9C004D22C6 /* HomepwnerItemCell.xib in Resources */,
 				EFB3B90E18D0EAD100790AF3 /* DetailViewController~ipad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,9 +297,11 @@
 			files = (
 				EF5757DC18ABFCC8000A854C /* BNRItemStore.m in Sources */,
 				EF5757D618ABFBD1000A854C /* ItemsViewController.m in Sources */,
+				EFCC60FC18E35C33004D22C6 /* HomepwnerItemCell.m in Sources */,
 				EF6FFBC918B544160002FC68 /* BNRImageStore.m in Sources */,
 				EF5757D918ABFC9D000A854C /* BNRItem.m in Sources */,
 				EF5757B618ABFBA8000A854C /* HomepwnerAppDelegate.m in Sources */,
+				EFF7958D18E5A9B400C22FB6 /* ImageViewController.m in Sources */,
 				EF5757B218ABFBA8000A854C /* main.m in Sources */,
 				EF5537C118B29E08008CEBEE /* DetailViewController.m in Sources */,
 			);
@@ -329,7 +349,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -368,7 +387,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -430,7 +448,6 @@
 		EF5757D218ABFBA8000A854C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Homepwner.app/Homepwner";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -453,7 +470,6 @@
 		EF5757D318ABFBA8000A854C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Homepwner.app/Homepwner";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

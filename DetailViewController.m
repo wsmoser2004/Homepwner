@@ -189,6 +189,7 @@
         [[BNRImageStore sharedStore] deleteImageForKey:item.imageKey];
     
     UIImage *image = [info objectForKey:UIImagePickerControllerEditedImage];
+    [item setThumbnailDataFromImage:image];
     
     CFUUIDRef newUniqueID = CFUUIDCreate(kCFAllocatorDefault);
     CFStringRef newUniqueIDString = CFUUIDCreateString(kCFAllocatorDefault, newUniqueID);

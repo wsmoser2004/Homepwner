@@ -17,6 +17,10 @@
 }
 
 @property (nonatomic, copy) NSString *imageKey;
+@property (nonatomic, strong) UIImage *thumbnail;
+@property (nonatomic, strong) NSData *thumbnailData;
+
+- (void)setThumbnailDataFromImage:(UIImage *)image;
 
 - (id)initWithItemName:(NSString *)name serialNumber:(NSString *)sNumber;
 - (id)initWithItemName:(NSString *)name valueInDollars:(int)value serialNumber:(NSString *) sNumber;
