@@ -21,7 +21,7 @@
     if (self)
     {
         UINavigationItem *n = [self navigationItem];
-        [n setTitle:@"Homepwner"];
+        [n setTitle:NSLocalizedString(@"Homepwner", @"Name of application")];
         
         UIBarButtonItem *bbi = [[UIBarButtonItem alloc]
                                 initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
@@ -65,16 +65,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-//    UITableViewCell *cell =
-//        [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell"];
-//    
-//    if (!cell)
-//    {
-//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
-//                                      reuseIdentifier:@"UITableViewCell"];
-//    }
     BNRItem *p = [[[BNRItemStore sharedStore] allItems] objectAtIndex:[indexPath row]];
-//    [[cell textLabel] setText:[p description]];
     
     // Get the new or recycled cell
     HomepwnerItemCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomepwnerItemCell"];
@@ -85,7 +76,9 @@
     // Configure the cell with the BNRItem
     [[cell nameLabel] setText:[p itemName]];
     [[cell serialNumberLabel] setText:[p serialNumber]];
-    [[cell valueLabel] setText:[NSString stringWithFormat:@"$%d", [p valueInDollars]]];
+//    [[cell valueLabel] setText:[NSString stringWithFormat:@"$%d", [p valueInDollars]]];
+    NSString *currencySymbol = [[NSLocale currentLocale] objectForKey:NSLocaleCurrencySymbol];
+    [[cell valueLabel] setText:[NSString stringWithFormat:@"%@%d", currencySymbol, [p valueInDollars]]];
     [[cell thumbnailView] setImage:[p thumbnail]];
     
     return cell;

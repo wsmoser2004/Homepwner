@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		EF3ED00418EC812D004EC215 /* AssetTypePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3ED00318EC812D004EC215 /* AssetTypePicker.m */; };
 		EF5537C118B29E08008CEBEE /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5537BF18B29E08008CEBEE /* DetailViewController.m */; };
-		EF5537C218B29E08008CEBEE /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF5537C018B29E08008CEBEE /* DetailViewController.xib */; };
 		EF5757A618ABFBA8000A854C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5757A518ABFBA8000A854C /* Foundation.framework */; };
 		EF5757A818ABFBA8000A854C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5757A718ABFBA8000A854C /* CoreGraphics.framework */; };
 		EF5757AA18ABFBA8000A854C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5757A918ABFBA8000A854C /* UIKit.framework */; };
@@ -29,6 +28,8 @@
 		EF8D2DD418E9F053005D0A0E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF8D2DD318E9F053005D0A0E /* CoreData.framework */; };
 		EF8D2DD718E9F0A8005D0A0E /* Homepwner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF8D2DD518E9F0A8005D0A0E /* Homepwner.xcdatamodeld */; };
 		EF8D2DDA18E9F956005D0A0E /* BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8D2DD918E9F956005D0A0E /* BNRItem.m */; };
+		EF8F12B718EC96D000BACD8E /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF8F12B918EC96D000BACD8E /* DetailViewController.xib */; };
+		EF8F12BF18EC9B5E00BACD8E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF8F12C118EC9B5E00BACD8E /* Localizable.strings */; };
 		EFB3B90E18D0EAD100790AF3 /* DetailViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFB3B90D18D0EAD100790AF3 /* DetailViewController~ipad.xib */; };
 		EFCC60FC18E35C33004D22C6 /* HomepwnerItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCC60FB18E35C33004D22C6 /* HomepwnerItemCell.m */; };
 		EFCC60FE18E35C9C004D22C6 /* HomepwnerItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFCC60FD18E35C9C004D22C6 /* HomepwnerItemCell.xib */; };
@@ -51,7 +52,6 @@
 		EF3ED00318EC812D004EC215 /* AssetTypePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetTypePicker.m; sourceTree = "<group>"; };
 		EF5537BE18B29E07008CEBEE /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = ../DetailViewController.h; sourceTree = "<group>"; };
 		EF5537BF18B29E08008CEBEE /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = ../DetailViewController.m; sourceTree = "<group>"; };
-		EF5537C018B29E08008CEBEE /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailViewController.xib; path = ../DetailViewController.xib; sourceTree = "<group>"; };
 		EF5757A218ABFBA8000A854C /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF5757A518ABFBA8000A854C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EF5757A718ABFBA8000A854C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -79,6 +79,12 @@
 		EF8D2DD618E9F0A8005D0A0E /* Homepwner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Homepwner.xcdatamodel; sourceTree = "<group>"; };
 		EF8D2DD818E9F956005D0A0E /* BNRItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRItem.h; sourceTree = "<group>"; };
 		EF8D2DD918E9F956005D0A0E /* BNRItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItem.m; sourceTree = "<group>"; };
+		EF8F12B818EC96D000BACD8E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController.xib; sourceTree = "<group>"; };
+		EF8F12BA18EC982500BACD8E /* es */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = es; path = es.lproj/DetailViewController.xib; sourceTree = "<group>"; };
+		EF8F12BB18EC982500BACD8E /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EF8F12BC18EC982500BACD8E /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EF8F12C018EC9B5E00BACD8E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EF8F12C218EC9B6300BACD8E /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EFB3B90D18D0EAD100790AF3 /* DetailViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "DetailViewController~ipad.xib"; sourceTree = SOURCE_ROOT; };
 		EFCC60FA18E35C33004D22C6 /* HomepwnerItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomepwnerItemCell.h; sourceTree = "<group>"; };
 		EFCC60FB18E35C33004D22C6 /* HomepwnerItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomepwnerItemCell.m; sourceTree = "<group>"; };
@@ -155,7 +161,7 @@
 				EF5757DB18ABFCC8000A854C /* BNRItemStore.m */,
 				EF5537BE18B29E07008CEBEE /* DetailViewController.h */,
 				EF5537BF18B29E08008CEBEE /* DetailViewController.m */,
-				EF5537C018B29E08008CEBEE /* DetailViewController.xib */,
+				EF8F12B918EC96D000BACD8E /* DetailViewController.xib */,
 				EFB3B90D18D0EAD100790AF3 /* DetailViewController~ipad.xib */,
 				EF5757DD18AC06D7000A854C /* HeaderView.xib */,
 				EF5757B418ABFBA8000A854C /* HomepwnerAppDelegate.h */,
@@ -166,6 +172,7 @@
 				EF5757B718ABFBA8000A854C /* Images.xcassets */,
 				EFF7958A18E5A9B400C22FB6 /* ImageViewController.h */,
 				EFF7958B18E5A9B400C22FB6 /* ImageViewController.m */,
+				EF8F12C118EC9B5E00BACD8E /* Localizable.strings */,
 				EFF7958C18E5A9B400C22FB6 /* ImageViewController.xib */,
 				EF5757D418ABFBD1000A854C /* ItemsViewController.h */,
 				EF5757D518ABFBD1000A854C /* ItemsViewController.m */,
@@ -265,6 +272,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				es,
 			);
 			mainGroup = EF57579918ABFBA8000A854C;
 			productRefGroup = EF5757A318ABFBA8000A854C /* Products */;
@@ -285,8 +293,9 @@
 				EF5757DE18AC06D7000A854C /* HeaderView.xib in Resources */,
 				EF5757B018ABFBA8000A854C /* InfoPlist.strings in Resources */,
 				EF5757B818ABFBA8000A854C /* Images.xcassets in Resources */,
-				EF5537C218B29E08008CEBEE /* DetailViewController.xib in Resources */,
+				EF8F12B718EC96D000BACD8E /* DetailViewController.xib in Resources */,
 				EFF7958E18E5A9B400C22FB6 /* ImageViewController.xib in Resources */,
+				EF8F12BF18EC9B5E00BACD8E /* Localizable.strings in Resources */,
 				EFCC60FE18E35C9C004D22C6 /* HomepwnerItemCell.xib in Resources */,
 				EFB3B90E18D0EAD100790AF3 /* DetailViewController~ipad.xib in Resources */,
 			);
@@ -344,6 +353,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				EF5757AF18ABFBA8000A854C /* en */,
+				EF8F12BB18EC982500BACD8E /* es */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -352,8 +362,28 @@
 			isa = PBXVariantGroup;
 			children = (
 				EF5757C818ABFBA8000A854C /* en */,
+				EF8F12BC18EC982500BACD8E /* es */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EF8F12B918EC96D000BACD8E /* DetailViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF8F12B818EC96D000BACD8E /* en */,
+				EF8F12BA18EC982500BACD8E /* es */,
+			);
+			name = DetailViewController.xib;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		EF8F12C118EC9B5E00BACD8E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF8F12C018EC9B5E00BACD8E /* en */,
+				EF8F12C218EC9B6300BACD8E /* es */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
