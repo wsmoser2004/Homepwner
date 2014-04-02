@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF3ED00418EC812D004EC215 /* AssetTypePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3ED00318EC812D004EC215 /* AssetTypePicker.m */; };
 		EF5537C118B29E08008CEBEE /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5537BF18B29E08008CEBEE /* DetailViewController.m */; };
 		EF5537C218B29E08008CEBEE /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF5537C018B29E08008CEBEE /* DetailViewController.xib */; };
 		EF5757A618ABFBA8000A854C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5757A518ABFBA8000A854C /* Foundation.framework */; };
@@ -22,10 +23,12 @@
 		EF5757C918ABFBA8000A854C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF5757C718ABFBA8000A854C /* InfoPlist.strings */; };
 		EF5757CB18ABFBA8000A854C /* HomepwnerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5757CA18ABFBA8000A854C /* HomepwnerTests.m */; };
 		EF5757D618ABFBD1000A854C /* ItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5757D518ABFBD1000A854C /* ItemsViewController.m */; };
-		EF5757D918ABFC9D000A854C /* BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5757D818ABFC9D000A854C /* BNRItem.m */; };
 		EF5757DC18ABFCC8000A854C /* BNRItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5757DB18ABFCC8000A854C /* BNRItemStore.m */; };
 		EF5757DE18AC06D7000A854C /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF5757DD18AC06D7000A854C /* HeaderView.xib */; };
 		EF6FFBC918B544160002FC68 /* BNRImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6FFBC818B544160002FC68 /* BNRImageStore.m */; };
+		EF8D2DD418E9F053005D0A0E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF8D2DD318E9F053005D0A0E /* CoreData.framework */; };
+		EF8D2DD718E9F0A8005D0A0E /* Homepwner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF8D2DD518E9F0A8005D0A0E /* Homepwner.xcdatamodeld */; };
+		EF8D2DDA18E9F956005D0A0E /* BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8D2DD918E9F956005D0A0E /* BNRItem.m */; };
 		EFB3B90E18D0EAD100790AF3 /* DetailViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFB3B90D18D0EAD100790AF3 /* DetailViewController~ipad.xib */; };
 		EFCC60FC18E35C33004D22C6 /* HomepwnerItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCC60FB18E35C33004D22C6 /* HomepwnerItemCell.m */; };
 		EFCC60FE18E35C9C004D22C6 /* HomepwnerItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFCC60FD18E35C9C004D22C6 /* HomepwnerItemCell.xib */; };
@@ -44,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF3ED00218EC812D004EC215 /* AssetTypePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetTypePicker.h; sourceTree = "<group>"; };
+		EF3ED00318EC812D004EC215 /* AssetTypePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetTypePicker.m; sourceTree = "<group>"; };
 		EF5537BE18B29E07008CEBEE /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = ../DetailViewController.h; sourceTree = "<group>"; };
 		EF5537BF18B29E08008CEBEE /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = ../DetailViewController.m; sourceTree = "<group>"; };
 		EF5537C018B29E08008CEBEE /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailViewController.xib; path = ../DetailViewController.xib; sourceTree = "<group>"; };
@@ -65,13 +70,15 @@
 		EF5757CA18ABFBA8000A854C /* HomepwnerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomepwnerTests.m; sourceTree = "<group>"; };
 		EF5757D418ABFBD1000A854C /* ItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemsViewController.h; sourceTree = "<group>"; };
 		EF5757D518ABFBD1000A854C /* ItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemsViewController.m; sourceTree = "<group>"; };
-		EF5757D718ABFC9D000A854C /* BNRItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BNRItem.h; path = ../BNRItem.h; sourceTree = "<group>"; };
-		EF5757D818ABFC9D000A854C /* BNRItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BNRItem.m; path = ../BNRItem.m; sourceTree = "<group>"; };
 		EF5757DA18ABFCC7000A854C /* BNRItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRItemStore.h; sourceTree = "<group>"; };
 		EF5757DB18ABFCC8000A854C /* BNRItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItemStore.m; sourceTree = "<group>"; };
 		EF5757DD18AC06D7000A854C /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HeaderView.xib; path = ../HeaderView.xib; sourceTree = "<group>"; };
 		EF6FFBC718B544160002FC68 /* BNRImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRImageStore.h; sourceTree = "<group>"; };
 		EF6FFBC818B544160002FC68 /* BNRImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRImageStore.m; sourceTree = "<group>"; };
+		EF8D2DD318E9F053005D0A0E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		EF8D2DD618E9F0A8005D0A0E /* Homepwner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Homepwner.xcdatamodel; sourceTree = "<group>"; };
+		EF8D2DD818E9F956005D0A0E /* BNRItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRItem.h; sourceTree = "<group>"; };
+		EF8D2DD918E9F956005D0A0E /* BNRItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItem.m; sourceTree = "<group>"; };
 		EFB3B90D18D0EAD100790AF3 /* DetailViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "DetailViewController~ipad.xib"; sourceTree = SOURCE_ROOT; };
 		EFCC60FA18E35C33004D22C6 /* HomepwnerItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomepwnerItemCell.h; sourceTree = "<group>"; };
 		EFCC60FB18E35C33004D22C6 /* HomepwnerItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomepwnerItemCell.m; sourceTree = "<group>"; };
@@ -86,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF8D2DD418E9F053005D0A0E /* CoreData.framework in Frameworks */,
 				EF5757A818ABFBA8000A854C /* CoreGraphics.framework in Frameworks */,
 				EF5757AA18ABFBA8000A854C /* UIKit.framework in Frameworks */,
 				EF5757A618ABFBA8000A854C /* Foundation.framework in Frameworks */,
@@ -127,6 +135,7 @@
 		EF5757A418ABFBA8000A854C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EF8D2DD318E9F053005D0A0E /* CoreData.framework */,
 				EF5757A518ABFBA8000A854C /* Foundation.framework */,
 				EF5757A718ABFBA8000A854C /* CoreGraphics.framework */,
 				EF5757A918ABFBA8000A854C /* UIKit.framework */,
@@ -140,9 +149,9 @@
 			children = (
 				EF6FFBC718B544160002FC68 /* BNRImageStore.h */,
 				EF6FFBC818B544160002FC68 /* BNRImageStore.m */,
-				EF5757D718ABFC9D000A854C /* BNRItem.h */,
-				EF5757D818ABFC9D000A854C /* BNRItem.m */,
 				EF5757DA18ABFCC7000A854C /* BNRItemStore.h */,
+				EF3ED00218EC812D004EC215 /* AssetTypePicker.h */,
+				EF3ED00318EC812D004EC215 /* AssetTypePicker.m */,
 				EF5757DB18ABFCC8000A854C /* BNRItemStore.m */,
 				EF5537BE18B29E07008CEBEE /* DetailViewController.h */,
 				EF5537BF18B29E08008CEBEE /* DetailViewController.m */,
@@ -161,6 +170,9 @@
 				EF5757D418ABFBD1000A854C /* ItemsViewController.h */,
 				EF5757D518ABFBD1000A854C /* ItemsViewController.m */,
 				EF5757AC18ABFBA8000A854C /* Supporting Files */,
+				EF8D2DD518E9F0A8005D0A0E /* Homepwner.xcdatamodeld */,
+				EF8D2DD818E9F956005D0A0E /* BNRItem.h */,
+				EF8D2DD918E9F956005D0A0E /* BNRItem.m */,
 			);
 			path = Homepwner;
 			sourceTree = "<group>";
@@ -297,13 +309,15 @@
 			files = (
 				EF5757DC18ABFCC8000A854C /* BNRItemStore.m in Sources */,
 				EF5757D618ABFBD1000A854C /* ItemsViewController.m in Sources */,
+				EF3ED00418EC812D004EC215 /* AssetTypePicker.m in Sources */,
 				EFCC60FC18E35C33004D22C6 /* HomepwnerItemCell.m in Sources */,
 				EF6FFBC918B544160002FC68 /* BNRImageStore.m in Sources */,
-				EF5757D918ABFC9D000A854C /* BNRItem.m in Sources */,
 				EF5757B618ABFBA8000A854C /* HomepwnerAppDelegate.m in Sources */,
 				EFF7958D18E5A9B400C22FB6 /* ImageViewController.m in Sources */,
 				EF5757B218ABFBA8000A854C /* main.m in Sources */,
+				EF8D2DDA18E9F956005D0A0E /* BNRItem.m in Sources */,
 				EF5537C118B29E08008CEBEE /* DetailViewController.m in Sources */,
+				EF8D2DD718E9F0A8005D0A0E /* Homepwner.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +530,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EF8D2DD518E9F0A8005D0A0E /* Homepwner.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EF8D2DD618E9F0A8005D0A0E /* Homepwner.xcdatamodel */,
+			);
+			currentVersion = EF8D2DD618E9F0A8005D0A0E /* Homepwner.xcdatamodel */;
+			path = Homepwner.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EF57579A18ABFBA8000A854C /* Project object */;
 }
